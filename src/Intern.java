@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class Intern extends TeamMember {
     public String requestedField;
     protected int internID;

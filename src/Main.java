@@ -1,3 +1,5 @@
+
+
 public class Main {
     public static void main(String[] args) {
         Intern intern = new Intern("EPFL", 112590, "Iliya Asadi", "iliya70594@gmail.com", "Iran", "Computer Science", "Machine Learning", 1);
