@@ -18,7 +18,7 @@ public abstract class TeamMember {
 
     public void setNationalID(long nationalID) {
         if (nationalID < 0 || String.valueOf(nationalID).length() < 6) {
-            System.out.println("Wrong NationalID");
+            System.out.println("\n"+ "Wrong NationalID" +"\n");
         } else {
             this.nationalID = nationalID;
         }
@@ -26,7 +26,7 @@ public abstract class TeamMember {
 
        public void setEmail(String email) {
            if (email.indexOf('@') == -1) {
-               System.out.println("Wrong Email");
+               System.out.println("\n" + "Wrong Email" + "\n");
            } else {
                this.email = email;
            }
@@ -38,7 +38,7 @@ public abstract class TeamMember {
             this.nameOfInstitute = nameOfInstitute;
         }
         else {
-            System.out.println("First letter must be capital");
+            System.out.println("\n" + "First letter must be capital" + "\n");
         }
        }
 
@@ -48,7 +48,7 @@ public abstract class TeamMember {
             this.country = country;
         }
         else {
-            System.out.println("First letter must be capital");
+            System.out.println("\n" + "First letter must be capital" + "\n");
         }
     }
 
@@ -58,7 +58,7 @@ public abstract class TeamMember {
             this.faculty = faculty;
         }
         else {
-            System.out.println("First letter must be capital");
+            System.out.println("\n" + "First letter must be capital" + "\n");
         }
     }
 
@@ -68,8 +68,27 @@ public abstract class TeamMember {
             this.fullName= arr[1] + arr[0];
         }
         else{
-            System.out.println("First letters must be capital");
+            System.out.println("\n" + "First letters must be capital" + "\n");
         }
     }
 
+    public String getNameOfInstitute() {
+        return nameOfInstitute;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getFaculty() {
+        return faculty;
+    }
 }
